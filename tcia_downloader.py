@@ -108,7 +108,6 @@ if __name__ == "__main__":
     out_dir = args.outputdir
     n_jobs = args.n_jobs
     all_series = extract_filenames_from_manifest(manifest_file)
-    all_series = all_series[0:2]
     with Manager() as manager:
         q = manager.Queue()
         errors = manager.Queue()
