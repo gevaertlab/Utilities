@@ -1,3 +1,11 @@
+"""
+Author: Pritam Mukherjee
+Date: 04/15/2020
+Python version: 3.6
+Purpose: To sort through dicoms, organize them on the disk and also summarize them by series, all in a single pass! 
+Uses multiprocessing to speed everything up. 
+"""
+
 import os
 import sys
 import time
