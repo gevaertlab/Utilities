@@ -24,6 +24,8 @@ class Converter:
         self.writer = sitk.ImageFileWriter()
     
     def convert(self, input_path, output_filename):
+        input_path = str(input_path)   # simpleitk cannot handle python path objects, so best to sanitize
+        output_filename = str(output_filename)
         self.writer.SetFileName(output_filename)
         if self.input_type == 'dicom':
             dicom_files = self.reader.GetGDCMSeriesFileNames(input_path)
