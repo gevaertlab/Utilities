@@ -11,7 +11,7 @@ class Converter:
     The input type can be the filename extension of the image
     Then convert as:
     converter.convert(input_path, output_path)   
-    The code does no error handling by design, since and you may have to handle errors
+    The code does no error handling by design, and you may have to handle errors
     in the user code.
     """
     def __init__(self, input_type='dicom'):
