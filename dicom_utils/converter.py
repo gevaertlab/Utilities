@@ -12,7 +12,8 @@ class Converter:
     Then convert as:
     converter.convert(input_path, output_path)   
     The code does no error handling by design, and you may have to handle errors
-    in the user code.
+    in the user code. For example, if the output directory does not exist, it will
+    not create it and you will get an error. 
     """
     def __init__(self, input_type='dicom'):
         self.input_type = input_type
